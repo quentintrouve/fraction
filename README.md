@@ -1,9 +1,30 @@
-# js-kata-starter
+# fraction
 
-Starter project for kata (Node, TypeScript, Jest)
+Write a program that implements the addition of fractions. Fractions must be reduced. An implementation of the greatest common divisor (GCD) is provided:
 
-## Getting started
+```javascript
+function gcd(a, b) {
+  return b === 0 ? a : gcd(b, a % b);
+}
+```
 
-- **Fork**, then clone the repository
-- Install dependencies
-- Start developing (`npm test`)
+Examples:
+
+```
+1/2 + 1/3 = 5/6
+1/4 + 1/4 = 1/2
+```
+
+## Installation
+
+```
+git clone https://github.com/quentintrouve/fraction.git
+cd fraction
+npm install
+```
+
+## Development
+
+```
+npm test
+```
